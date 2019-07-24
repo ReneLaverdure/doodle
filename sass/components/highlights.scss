@@ -1,0 +1,20 @@
+.selected {
+  border: 2px solid rgb(243, 75, 33);
+  // outline:  5px solid green;
+  // margin: 1.4rem 1.6rem;
+  background-color: rgb(255, 115, 0) !important;
+  border-radius: 50%;
+  // box-shadow: 5px 5px 8px rgb(243, 75, 33);
+}
+
+.low {
+  background-color: var(--green)!important;
+}
+
+.medium {
+  background-color: var(--yellow)!important;
+}
+
+.high {
+  background-color: var(--red)!important;
+}

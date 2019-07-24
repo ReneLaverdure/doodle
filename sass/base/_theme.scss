@@ -1,0 +1,23 @@
+.bodyTheme {
+  background-color: var( --light-main-bg);
+}
+
+.light-mode-body {
+  background-color: var( --light-main-bg);
+}
+
+.light-mode  {
+  background-color: var( --light-bg);
+  border: var(--light-bd);
+  color: var(--light-ft);
+}
+
+.dark-mode-body {
+  background-color: var(--dark-main-bg)
+}
+
+.dark-mode {
+  background-color: var( --dark-bg);
+  border: var(--dark-bd);
+  color: var(--dark-ft);
+}

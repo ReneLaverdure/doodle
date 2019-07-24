@@ -1,0 +1,68 @@
+.todo {
+
+  &__item {
+    margin: auto 15%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    // height: 3.5rem;
+    border-radius: 10px;
+    // border: 2px solid rgb(129, 129, 129);
+
+    display: flex;
+
+    h4 {
+      margin: auto 10%;
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
+  }
+
+  &__icon {
+    width: 10rem;
+    margin-left: auto;
+    font-size: 2rem;
+    display: flex;
+
+    p {
+      margin: auto;
+    }
+  }
+}
+
+.completed {
+  color: rgb(7, 206, 7);
+  transition: all .2s;
+
+  &:hover {
+    cursor: pointer;
+    color: rgb(0, 255, 0);
+
+  }
+}
+
+.delete {
+  color: rgb(163, 0, 0);
+  transition: all .2s;
+
+  &:hover {
+    cursor: pointer;
+    color: rgb(212, 0, 0);
+  }
+}
+
+.done {
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+
+.needed {
+  background-color: var(--green);
+}
+
+.important {
+  background-color: var(--yellow);
+}
+
+.crucial {
+  background-color: var(--red);
+}

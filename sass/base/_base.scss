@@ -1,0 +1,88 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 87.5em; //1400px
+$bp-large-2: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-900: 56.25em;   //900px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+$bp-x-small: 31.25em;    // 500px;
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root{
+  //light mode
+  --light-bg: #FFFCF9;
+  --light-ft: #2e2e2e;
+  --light-bd: 2px solid rgb(100, 100, 100);
+  --light-main-bg: #E9E9E9;
+
+  //dark mode
+  --dark-bg: #353535;
+  --dark-ft: #f3f3f3;
+  --dark-bd: 2px solid rgb(233, 233, 233);
+  --dark-main-bg: rgb(85, 85, 85);
+
+  --green: #0cdd52;
+  --yellow: #d4bf00;
+  --red: #e03535;
+
+
+}
+
+
+
+html {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5 ->1rem = 10px
+  font-family: 'helvetica', sans-serif;
+
+  @media only screen and (max-width: $bp-large-2) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-900) {
+    font-size: 40%;
+    padding: 1rem;
+  }
+
+}
+
+.container {
+  display: grid;
+  height: 70vh;
+
+  @media only screen and (max-width: $bp-medium) {
+   height: auto;
+  }
+
+
+  grid-template-rows: repeat(8, 1fr);
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 20rem 10rem repeat(2, 1fr);
+  }
+  grid-gap: 2rem;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  transform: translateX(2rem);
+  border-radius: 10px;
+  background: rgb(102, 102, 102);
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: rgb(165, 165, 165);
+}
